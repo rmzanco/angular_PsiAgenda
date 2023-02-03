@@ -1,13 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Psiagenda</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Oi Meu Amor !!!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 </head>
 <body>
-  <app-root></app-root>
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Oi meu amor !!!</h2>
+    <p class="w3-justify">Hoje completamos 1 ano do dia em que um resolveu mergulhar na vida do outro, e com certeza te namorar é a melhor coisa que já aconteceu na minha vida! Só você foi capaz de fazer com que eu pudesse demonstrar tudo o que sinto, com toda a sinceridade, o meu jeito de ser.
+      <br>
+      Um namoro nem sempre são rosas. O processo de amar uma pessoa, independente da maneira que você vai encontrar ela depois de acordar (não é uma indireta pra você, meu amoor kkk, juro!!!) ou de passar por alguma coisa ruim, é o momento em que sempre um esteve junto do outro, momentos que um estava precisando, o outro estava lá! E eu só tenho a te agradecer por me fazer tão bem, por me ajudar a levantar e por me amar em momentos de tensão !!!
+      <br>
+      Carolina, você é uma maravilha de mulher! O nosso relacionamento é leve, e em cada olhar seu, sinto felicidade e paz ! Em um mundo ao nosso redor, de tanta gente passando por desconfiança, ciumes e laços que não são saudáveis, temos a certeza do amor e a confiança reciproca de um para o outro! A melhor coisa é poder olhar para você e dizer como te amo !!! 
+      <br>
+      Obrigado meu amor, por tudo ! Por ser quem você é, e me fazer feliz !! Quero que você saiba que desse ano pra cá, o meu objetivo é construir o futuro com você. Não tem mais só eu. Sem você eu não sou nada, porque vc me completa!!!!! 
+      <br>
+      Te amo, Carolina Zamai, quero você pra eternidade, minha vidinha inteira !!!!
+      <br>
+      Feliz 1 ano de nós !!!!!!!
+      <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cgb6wLopWV8?start=152" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <br>
+      Oh, baby, não parece o paraíso agora?<br>
+      Não parece algo vindo de um sonho?<br>
+      É, eu nunca conheci nada como isso<br>
+      ...<br>
+      Baby, você é a única que sempre soube como<br>
+      Me fazer querer viver como eu quero viver agora<br>
+    </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>EU</p>
+        <img src="1.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>TE</p>
+        <img src="2.jpeg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>AMO!</p>
+        <img src="3.jpeg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
